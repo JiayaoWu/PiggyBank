@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_second" tools:context="com.cornez.piggybank.SecondActivity"
+    android:clickable="false"
+    android:background="#f8c9ea">
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/OneDollar"
+        android:background="@drawable/onedollar3"
+        android:layout_above="@+id/TenDollar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/FiveDollar"
+        android:background="@drawable/fivedollar"
+        android:layout_below="@+id/nickel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="41dp" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/TenDollar"
+        android:background="@drawable/tendollar"
+        android:layout_below="@+id/FiveDollar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:id="@+id/TwentyDollar"
+        android:layout_alignTop="@+id/TenDollar"
+        android:layout_alignLeft="@+id/FiveDollar"
+        android:layout_alignStart="@+id/FiveDollar"
+        android:background="@drawable/twenty" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/penny"
+        android:background="@drawable/onecent"
+        android:layout_marginTop="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/nickel"
+        android:background="@drawable/nickel"
+        android:layout_alignTop="@+id/penny"
+        android:layout_toRightOf="@+id/penny"
+        android:layout_toEndOf="@+id/penny"
+        android:layout_marginLeft="35dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/dime"
+        android:background="@drawable/dime2"
+        android:layout_alignTop="@+id/nickel"
+        android:layout_toLeftOf="@+id/quarter"
+        android:layout_toStartOf="@+id/quarter"
+        android:layout_marginRight="30dp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/quarter"
+        android:background="@drawable/quartercopy"
+        android:layout_alignBottom="@+id/nickel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:id="@+id/amountMoney"
+        android:textColor="#060606"
+        android:text="$ 0.00"
+        android:layout_alignBottom="@+id/withdraw"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/deposit"
+        android:background="@drawable/deposit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/withdraw"
+        android:background="@drawable/withdraw"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/quarter"
+        android:layout_alignEnd="@+id/quarter"
+        android:layout_marginRight="30dp" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/undo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/undo"
+        android:layout_below="@+id/TenDollar" />
+
+</RelativeLayout>
